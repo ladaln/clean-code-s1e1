@@ -16,7 +16,8 @@
   list-style:none;
 }
 
-.list__input, .btn {
+.list__input, 
+.btn {
   outline:none;
 }
 
@@ -68,7 +69,8 @@
 /*==============================
           Heading
 ==============================*/
-.header, .new-task {
+.header, 
+.new-task {
  color: #333;
  font-weight: 700;
  font-size: 15px;
@@ -119,7 +121,9 @@
  align-items: center;
 }
 
-.list__input, .list__label, .list__btn {
+.list__input, 
+.list__label, 
+.list__btn {
  vertical-align: middle;
 }
 
