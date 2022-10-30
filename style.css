@@ -5,23 +5,23 @@ body {
  font-family: Lato, sans-serif;
 }
 
-.description-app {
+.desc-app {
  width: 500px;
  margin: 0 auto;
  display: block;
  text-align: right;
 }
 
-.description-app img {
+.desc-app img {
  width: 100%;
 }
 
-.description-app .more-inf {
+.desc-app .more-inf {
  font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
- .description-app {
+ .desc-app {
   text-align: center;
  }
 }
