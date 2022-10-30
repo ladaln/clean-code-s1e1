@@ -9,15 +9,14 @@
 
 .list {
   margin:0;
-  padding: 0px;
+  padding: 0;
 }
 
 .list__item {
   list-style:none;
 }
 
-.list__input,
-.btn {
+.list__input, .btn {
   outline:none;
 }
 
@@ -45,7 +44,7 @@
 .task {
  width: 56%;
  display: inline-block;
- flex-grow: 1
+ flex-grow: 1;
 }
 
 .add-item-wrapper {
@@ -54,7 +53,7 @@
 
 .btn {
  background: none;
- border: 0px;
+ border: 0;
  color: #888;
  font-size: 15px;
  width: 60px;
@@ -69,8 +68,7 @@
 /*==============================
           Heading
 ==============================*/
-.header,
-.new-task {
+.header, .new-task {
  color: #333;
  font-weight: 700;
  font-size: 15px;
@@ -121,9 +119,7 @@
  align-items: center;
 }
 
-.list__input,
-.list__label,
-.list__btn {
+.list__input, .list__label, .list__btn {
  vertical-align: middle;
 }
 
@@ -139,7 +135,7 @@
 }
 
 .list__item > .content {
- width: 226px
+ width: 226px;
 }
 
 .delete .img__delete {
@@ -164,12 +160,12 @@
           Edit Task
 ==============================*/
 .list .list__item .content {
- display: none
+ display: none;
 }
 
 .list .edit-mode .content {
  display: inline-block;
- width: 224px
+ width: 224px;
 }
 
 .list .edit-mode .label-content {
