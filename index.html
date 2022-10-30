@@ -9,72 +9,77 @@
 <body class="page">
  <aside class="page__desc desc-app">
   <img class="desc-app__img" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-  <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </aside>
+  <a class="desc-app__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+ </aside>
+ 
   <section class="page__main main">
-   <article class="main__note note">
-    <h3 class="note__title title">Add Item</h3>
-    <div class="note__wrapper item-wrap">
-     <label class="item-wrap__label label-add" for="input-task">
-      <input class="item-wrap__input list__input task content"
-             id="input-task"
+   <article class="main__add-item add-item">
+    <h3 class="add-item__title title">Add Item</h3>
+    <div class="add-item__wrapper item-wrap">
+     <label class="item-wrap__label" for="item-wrap__input-js">
+      <input class="item-wrap__input item-wrap__input_focused input-text"
+             id="item-wrap__input-js"
              type="text">
      </label>
      <button class="item-wrap__btn btn">Add</button>
-   </div>
- </article>
+     </div>
+    </article>
+   
  <article class="page__todo todo">
   <h3 class="todo__title title">Todo</h3>
-  <ul class="list" id="incomplete-tasks">
+  <ul class="todo__list list" id="todo__list-js">
    <li class="list__item">
     <input class="list__input input-checkbox"
-           id="item-1"
+           id="list__input-todo1"
            type="checkbox">
-    <label class="list__label task label-content" for="item-1">Pay Bills</label>
-    <label class="wrap-label" for="item-1-content">
-     <input class="list__input task content"
-            id="item-1-content"
+    <label class="list__label label-content" for="list__input-todo1">Pay Bills</label>
+    <label class="list__label wrap-label" for="list__input-todo1-content">
+     <input class="list__input wrap-label__input wrap-label__input_focused input-text"
+            id="list__input-todo1-content"
             type="text">
     </label>
-    <button class="list__btn btn edit">Edit</button>
-    <button class="list__btn btn delete"><img class="img__delete" src="./remove.svg" alt="Remove button"></button>
+    <button class="list__btn btn list__btn_edit">Edit</button>
+    <button class="list__btn btn list__btn_delete"><img class="img__delete" src="./remove.svg" alt="Delete button"></button>
    </li>
+   
    <li class="list__item edit-mode">
     <input class="list__input input-checkbox"
-           id="item-2"
+           id="list__input-todo2"
            type="checkbox">
-    <label class="list__label task label-content" for="item-2">Go Shopping</label>
-    <label class="wrap-label" for="item-2-content">
-     <input class="list__input task content"
-            id="item-2-content"
+    <label class="list__label label-content" for="list__input-todo2">Go Shopping</label>
+    <label class="list__label wrap-label" for="list__input-todo2-content">
+     <input class="list__input wrap-label__input wrap-label__input_focused input-text"
+            id="list__input-todo2-content"
             value="Go Shopping"
             type="text">
     </label>
-    <button class="list__btn btn edit">Save</button>
-    <button class="list__btn btn delete"><img class="img__delete" src="./remove.svg" alt="Delete button"></button>
+    <button class="list__btn btn list__btn_edit">Save</button>
+    <button class="list__btn btn list__btn_delete"><img class="img__delete" src="./remove.svg" alt="Delete button"></button>
    </li>
   </ul>
  </article>
+   
  <article class="page__completed completed">
   <h3 class="completed__title title">Completed</h3>
-  <ul class="list" id="completed-tasks">
+  <ul class="completed__list list" id="completed__list-js">
    <li class="list__item">
-     <input class="list__input input-checkbox"
-            id="item-3"
-            type="checkbox"
-            checked>
-     <label class="list__label task label-content" for="item-3">See the Doctor</label>
-     <label class="wrap-label" for="item-3-content">
-     <input class="list__input task content"
-            id="item-3-content"
+    <input class="list__input list__input_checked input-checkbox"
+           id="list__input-completed"
+           type="checkbox"
+           checked>
+    <label class="list__label label-content" for="list__input-completed">See the Doctor</label>
+    <label class="list__label wrap-label" for="list__input-content">
+     <input class="list__input wrap-label__input wrap-label__input_focused input-text"
+            id="list__input-content"
             type="text">
-     </label>
-     <button class="list__btn btn edit">Edit</button>
-     <button class="list__btn btn delete"><img class="img__delete" src="./remove.svg" alt="Delete button"></button>
+    </label>
+     <button class="list__btn btn list__btn_edit">Edit</button>
+     <button class="list__btn btn list__btn_delete"><img class="img__delete" src="./remove.svg" alt="Delete button"></button>
     </li>
    </ul>
   </article>
  </section>
+ 
  <script src="app.js"></script>
 </body>
 </html>
