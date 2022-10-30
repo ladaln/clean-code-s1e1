@@ -11,9 +11,11 @@
   margin:0;
   padding: 0px;
 }
+
 .list__item {
   list-style:none;
 }
+
 .list__input,
 .btn {
   outline:none;
@@ -118,6 +120,7 @@
  justify-content: space-between;
  align-items: center;
 }
+
 .list__input,
 .list__label,
 .list__btn {
@@ -163,6 +166,7 @@
 .list .list__item .content {
  display: none
 }
+
 .list .edit-mode .content {
  display: inline-block;
  width: 224px
