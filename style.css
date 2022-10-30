@@ -1,7 +1,7 @@
 /*=====================================================================
                Clean-code-s1e1
 =====================================================================*/
-.home-page {
+.page {
   font-family: Lato, sans-serif;
  background-color: #f8f8f8;
  color: #333;
@@ -43,12 +43,12 @@
 }
 
 .task {
- width: 56%;
+ width: 94.25%;
  display: inline-block;
  flex-grow: 1;
 }
 
-.add-item-wrapper {
+.item-wrap  {
  display: flex;
 }
 
@@ -69,8 +69,9 @@
 /*==============================
           Heading
 ==============================*/
-.header, 
-.new-task {
+.note__title,
+.todo__title,
+.completed__title {
  color: #333;
  font-weight: 700;
  font-size: 15px;
@@ -100,14 +101,18 @@
 /*==============================
           New Task
 ==============================*/
-.new-task {
+.note__title {
  display: block;
  margin: 0 0 20px;
 }
 
-#new-task {
- width: 318px;
+.item-wrap__label {
+  width: 318px;
+  flex-grow: 1;
 }
+
+.item-wrap__input {
+  width: 95.5%;
 
 /*==============================
           Task list
@@ -138,7 +143,7 @@
  width: 226px;
 }
 
-.list__item > .content {
+.list__item > .wrap-label {
  width: 226px;
 }
 
@@ -163,11 +168,16 @@
 /*==============================
           Edit Task
 ==============================*/
-.list .list__item .content {
- display: none;
+.wrap-label {
+  flex-grow: 1;
+  outline: none;
 }
 
-.list .edit-mode .content {
+.list .list__item .wrap-label {
+  display: none;
+}
+
+.list .edit-mode .wrap-label {
  display: inline-block;
  width: 224px;
 }
