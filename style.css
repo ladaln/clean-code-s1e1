@@ -2,7 +2,7 @@
                Clean-code-s1e1
 =====================================================================*/
 .page {
-  font-family: Lato, sans-serif;
+ font-family: Lato, sans-serif;
  background-color: #f8f8f8;
  color: #333;
 }
@@ -189,7 +189,7 @@
 /*==============================
       Media Queries
 ==============================*/
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .desc-app {
     text-align: center;
   }
